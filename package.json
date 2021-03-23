@@ -1,0 +1,14 @@
+{
+  "name": "media_encoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.1"
+  }
+}

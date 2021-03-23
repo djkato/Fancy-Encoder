@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="icofont.min.css">
+
+</head>
+
+<body>
+
+    <div class="bodym">
+        <div class="appbar">
+            <h1>Party Encoder</h1>
+            <div class="dragger" style="-webkit-app-region: drag">
+
+            </div>
+            <div class="navbar">
+                <img style="z-index: 99;" id="min-btn" onclick="WindowManager.minimize()" src="ICO/minus-square.svg"
+                    width="24" height="24" alt="">
+                <img style="z-index: 99;" id="max-btn" onclick="WindowManager.maximize()" src="ICO/external.svg"
+                    width="24" height="24" alt="">
+                <img style="z-index: 99;" id="close-btn" onclick="WindowManager.exit()" src="ICO/close-squared-alt.svg"
+                    width="24" height="24" alt="">
+            </div>
+
+        </div>
+        <div class="main-wrap">
+            <div class="form-wrap">
+                <div class="buttontab">
+                    <button form="encode-queue" type="submit">Encode!</button>
+                    <button onclick="ping()">Add Entry</button>
+                </div>
+
+                <form id="encode-queue" action="" class="form">
+                    <div id="encodelist-wrap" class="encodelist-wrap">
+
+                    </div>
+                </form>
+            </div>
+            <div class="settings">
+            </div>
+            <div class="progress">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/main.mjs">
+    </script>
+</body>
+
+</html>
